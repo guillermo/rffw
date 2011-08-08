@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+COMMAND="$1"
+case $COMMAND in
+start)
+  exec start-stop-daemon -m --chdir /tmp --background --pidfile /tmp/rffw.pid --start --exec "/usr/local/bin/rffw" -- -p 80
+  ;;
+stop)
+  exec start-stop-daemon -m --stop --pidfile /tmp/rffw.pid --retry 5
+  ;;
+  
+*)
+  echo "Use $0 [start|stop]"
+  exit -1
+  ;;
+esac
+

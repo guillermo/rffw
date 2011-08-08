@@ -1,0 +1,10 @@
+
+
+check process rffw with pidfile /tmp/rffw.pid
+  start program = "/etc/init.d/rffw start"
+  stop program = "/etc/init.d/rffw stop"
+  if cpu > 60% for 2 cycles then alert
+  if cpu > 80% for 5 cycles then restart
+  if totalmem > 250.0 MB for 10 cycles then restart
+  if failed host localhost port 80 protocol http
+    then restart
