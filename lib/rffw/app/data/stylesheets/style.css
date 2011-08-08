@@ -1,0 +1,338 @@
+/* @override http://localhost:8080/stylesheets/style.css?v=2 */
+
+* {
+	font-family: 'Josefin Sans', arial, serif;
+	line-height: 16px;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	color: #002f2f;
+	font-weight: 300;
+}
+
+a {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+html, body {
+	background: url("/images/bg.png"), #a7a37e;
+	height: 100%;
+}
+
+h1 {
+	font-family: 'The Girl Next Door', arial, serif;
+}
+
+header {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	padding-bottom: 12px;
+}
+header h1 {
+	padding-left: 12.5%;
+	padding-right: 12.5%;
+	font-size: 56px;
+	line-height: px;
+	margin-top: 32px;
+}
+header h2 {
+	font-size: 16px;
+	line-height: 16px;
+	color: #efecca;
+}
+
+#progress_bar {
+	background: red ;
+	width: 317px;
+	height:  39px;
+	margin: 0 auto;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	background: white;
+	background: white;
+	padding: 0;
+	position: relative;
+}
+
+#progress_bar span{
+	display: block;
+	background: #002f2f;
+	height:  39px;
+	width: 50%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	transition: width 1s linear;
+	
+	line-height: 200px;
+	overflow: hidden;
+}
+
+#progress_bar {
+	display: none;
+}
+#progress_bar span b{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 317px;
+	text-align:center;
+	line-height: 39px;
+	vertical-align:middle;
+	font-size: 24px;
+	font-weight:bold;
+	text-shadow: white 0px 0px 2px;
+}
+/* Sticky Background */
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -112px;
+}
+
+footer, push {
+	height: 80px;
+	overflow: hidden;
+}
+
+/* end */
+section {
+	display: block;
+	margin: 0 auto;
+}
+section.center {
+	max-width: 480px;
+	padding: 16px 80px;
+	position: relative;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #efecca), color-stop(1, #a7a37e));
+	background: -moz-linear-gradient(top, #efecca, #a7a37e);
+	filter: progid:DXImageTransform.Microsoft.Gradient(endColorstr='$bg1', startColorstr='$bg2', gradientType='0');
+	text-align: center;
+}
+section.center h1 {
+	text-align: center;
+	font-size: 48px;
+	line-height: 48px;
+}
+section.center p {
+	text-align: justify;
+	font-size: 16px;
+	margin-bottom: 16px;
+	font-weight: 500;
+	text-shadow: #a7a37e 0.5px 0.5px 1px;
+}
+section.center p em {
+	font-weight: normal;
+}
+section.center p strong a, section.center p strong {
+	font-weight: 700;
+}
+section.center p a:active, section.center p a:focus {
+	background: #002f2f;
+	color: #a7a37e;
+	outline: 0;
+	text-decoration: none;
+	text-shadow: none;
+}
+section.center p a:hover {
+	text-decoration: none;
+}
+section.center img {
+	text-align: center;
+	display: block;
+}
+section.center h2 {
+	text-align: center;
+	font-size: 32px;
+	line-height: 32px;
+}
+section.list, section.posts {
+	background: url(/images/bg.png), #002f2f;
+	max-width: 100%;
+	padding: 32px 0 0;
+	text-align: center;
+}
+section.list h1, section.posts h1 {
+	color: #046380;
+	letter-spacing: 10px;
+	margin: 16px 0;
+}
+section.wide {
+	background: url(/images/bg.png), #002f2f;
+	width: 100%;
+	padding: 32px 0;
+}
+section.wide a {
+	color: #a7a37e;
+}
+section.wide > ul {
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+section.wide > ul li {
+	width: 320px;
+	vertical-align: top;
+	display: inline-block;
+	padding: 0 10px;
+}
+section.wide > ul li h1 {
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 32px;
+}
+section.wide > ul li h1 > a {
+	font-size: 40px;
+	line-height: 48px;
+	color: #046380;
+	text-decoration: none;
+}
+section.wide > ul li ul li {
+	margin-bottom: 8px;
+}
+section.wide > ul li ul, section.wide > ul li ul li, section.wide > ul li ul li a {
+	text-align: left;
+	font-size: 14px;
+	text-decoration: none;
+	color: #e6e2af;
+}
+
+#links, #posts {
+	max-width: 1040px;
+	list-style: none;
+	display: inline-block;
+}
+#links li, #posts li {
+	display: inline-block;
+	text-align: center;
+}
+#links a, #posts a {
+	text-decoration: none;
+	color: #e6e2af;
+}
+#links a:hover, #posts a:hover {
+	color: #a7a37e;
+}
+
+#links li {
+	width: 160px;
+}
+
+#posts li {
+	width: 240px;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
+footer {
+	background: url(/images/bg.png), #002f2f;
+	max-width: 100%;
+	padding: 32px 0 0;
+	text-align: center;
+	color: #a7a37e;
+}
+footer p {
+	padding: 32px 0;
+}
+footer a, footer p {
+	color: #a7a37e;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #a7a37e;
+}
+
+
+iframe {
+	border: 0;
+	background: transparent;
+}
+
+section.center form {
+	font-size: 24px !important;
+	text-align: center;
+}
+section.center label {
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	overflow:hidden;
+}
+
+section.center input{
+	font-size: 24px;
+	margin: 0 auto;
+}
+section.center input[type=file],
+section.center textarea{
+	width: 300px;
+	background: white;
+	padding: 9px 5px 9px 12px;
+	line-height: 18px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	border: 0px;
+}
+
+
+section.center input[type=file]:focus,
+section.center textarea:focus{
+	border: 1px solid #002f2f;
+	outline: none;
+	margin: -1px;
+}
+
+
+section.center textarea{
+	width: 100%;
+	font-size: 24px;
+	height: 240px;
+	padding: 6px 5px;
+	line-height: 36px;
+}
+
+section.center iframe {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+section.center input[type=submit] {
+	width: 180px;
+	height: 40px;
+	padding: 20px;
+	margin: 24px 10px;
+}
+@media (max-width:640px) {
+	section.center {
+		padding: 16px 12.5%;
+		width: inherit;
+		max-width: inherit;
+	}
+	section.center img {
+		width: 100%;
+	}
+
+}
+
+
+
+

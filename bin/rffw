@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'rffw'
+
+params  = ARGV.join(" ")
+
+port   = (params[/((\-\-port|\-p) (\d+))/,3] || 8080).to_i
+listen = (params[/((\-l|\-\-listen) ((\d+)\.(\d+)\.(\d+)\.(\d+)))/,3] || "0.0.0.0").to_i
+
+if params[/(-h|--help)/] 
+  $stderr.puts "#{$0} [(-p|--port) port_number] [(-l|--listen) ip]"
+  $stderr.puts ""
+  exit(-1)
+end
+
+RFFW::App.start(port,listen)
