@@ -4,6 +4,7 @@ require 'rffw'
 
 params  = ARGV.join(" ")
 
+
 port   = (params[/((\-\-port|\-p) (\d+))/,3] || 8080).to_i
 listen = (params[/((\-l|\-\-listen) ((\d+)\.(\d+)\.(\d+)\.(\d+)))/,3] || "0.0.0.0").to_i
 
@@ -12,5 +13,5 @@ if params[/(-h|--help)/]
   $stderr.puts ""
   exit(-1)
 end
-
+$stdout = File.open("/var/log/rffw.log",'a')
 RFFW::App.start(port,listen)
